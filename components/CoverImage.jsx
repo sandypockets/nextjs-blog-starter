@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function CoverImage({ title, src, slug, height, width }) {
+export default function CoverImage({ title, src, slug, height, width, coverImagePriority = false }) {
   const image = (
     <Image
       src={src}
@@ -13,6 +13,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
       layout="responsive"
       width={width}
       height={height}
+      priority={coverImagePriority}
     />
   )
   return (
