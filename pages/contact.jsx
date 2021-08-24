@@ -1,49 +1,45 @@
-import { Component } from 'react'
-
-import * as gtag from '../lib/gtag'
-import Layout from "../components/Layout/Layout";
+import { useState } from 'react'
 import Head from "next/head";
+import * as gtag from '../lib/gtag'
+import { BLOG_NAME } from "../lib/constants";
+import Layout from "../components/Layout/Layout";
 import Container from "../components/Layout/Container";
 import Intro from "../components/Home/Intro";
-import { BLOG_NAME } from "../lib/constants";
 
-export default class Contact extends Component {
-  state = { message: '' }
+export default function Contact() {
+  const [message, setMessage] = useState('')
 
-  handleInput = (e) => {
-    this.setState({ message: e.target.value })
+  const handleInput = (e) => {
+    setMessage(e.target.value)
   }
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-
     gtag.event({
       action: 'submit_form',
       category: 'Contact',
-      label: this.state.message,
+      label: message,
+      value: message
     })
-
-    this.setState({ message: '' })
+    setMessage('')
   }
 
-  render() {
-    return (
-      <Layout>
-        <Head>
-          <title>Contact | {BLOG_NAME}</title>
-        </Head>
-        <Container>
-          <Intro />
-          <h1>This is the Contact page</h1>
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              <span>Message:</span>
-              <textarea onChange={this.handleInput} value={this.state.message} />
-            </label>
-            <button type="submit">submit</button>
-          </form>
-        </Container>
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <Head>
+        <title>Contact | {BLOG_NAME}</title>
+      </Head>
+      <Container>
+        <Intro />
+        <h1>This is the Contact page</h1>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <span>Message:</span>
+            <textarea onChange={handleInput} value={message} />
+          </label>
+          <button type="submit">submit</button>
+        </form>
+      </Container>
+    </Layout>
+  )
 }
