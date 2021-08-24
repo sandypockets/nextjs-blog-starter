@@ -12,7 +12,7 @@ export default function About() {
       <Container>
         <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-tight md:pr-8">
-            About.
+            Nice to meet you.
           </h1>
         </section>
         <section className="max-w-2xl mx-auto pb-36">
