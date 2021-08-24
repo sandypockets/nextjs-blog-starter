@@ -1,4 +1,4 @@
-import Container from '../Container'
+import Container from './Container'
 import cn from 'classnames'
 import { GITHUB_REPO } from '../../lib/constants'
 

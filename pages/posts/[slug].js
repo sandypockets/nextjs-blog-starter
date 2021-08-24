@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/Container'
-import PostBody from '../../components/PostBody'
-import Header from '../../components/Header'
-import PostHeader from "../../components/PostHeader";
+import Container from '../../components/Layout/Container'
+import PostBody from '../../components/Post/PostBody'
+import Header from '../../components/Post/Header'
+import PostHeader from "../../components/Post/PostHeader";
 import Layout from '../../components/Layout/Layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/PostTitle'
+import PostTitle from '../../components/Post/PostTitle'
 import Head from 'next/head'
 import { BLOG_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
