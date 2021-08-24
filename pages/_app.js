@@ -1,4 +1,4 @@
-import '../styles/index.css'
+import '../styles/global.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
