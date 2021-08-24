@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
@@ -20,9 +20,6 @@ export default function Toggle({ darkMode, setDarkMode }) {
       }
     }
   })
-
-
-
 
   const toggleTheme = () => {
     enabled ? setEnabled(false) : setEnabled(true)

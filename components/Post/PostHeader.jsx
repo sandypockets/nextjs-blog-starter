@@ -1,6 +1,6 @@
 import Avatar from '../Avatar'
-import DateFormatter from '../DateFormatter'
 import CoverImage from '../CoverImage'
+import DateFormatter from '../DateFormatter'
 import PostTitle from './PostTitle'
 
 export default function PostHeader({ title, coverImage, date, author }) {

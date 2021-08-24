@@ -1,7 +1,6 @@
-import Container from './Container'
 import cn from 'classnames'
+import Container from './Container'
 import { GITHUB_REPO } from '../../lib/constants'
-import Toggle from "../Toggle";
 
 export default function Banner({ preview }) {
   return (

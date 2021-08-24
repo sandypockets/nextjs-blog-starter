@@ -1,9 +1,7 @@
-import Banner from './Banner'
-import Footer from './Footer'
-import Meta from './Meta'
+import { useEffect, useState } from "react";
 import CustomFooter from "../CustomFooter";
+import Meta from './Meta'
 import Nav from "./Nav";
-import {useEffect, useState} from "react";
 
 export default function Layout({ preview, children }) {
   const [darkMode, setDarkMode] = useState()
@@ -26,9 +24,8 @@ export default function Layout({ preview, children }) {
         {/*<Banner preview={preview} />*/}
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
         <main>{children}</main>
-      <CustomFooter />
+        <CustomFooter />
       </div>
-      {/*<Footer />*/}
     </>
   )
 }
