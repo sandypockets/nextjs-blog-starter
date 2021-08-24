@@ -7,9 +7,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang={LANG} className="dark">
         <Head>
-          <meta name="description" content={DESCRIPTION}></meta>
-          <meta name="author" content={AUTHOR}></meta>
-          <meta name="keywords" content={KEYWORDS}></meta>
+          <meta name="description" content={DESCRIPTION} />
+          <meta name="author" content={AUTHOR} />
+          <meta name="keywords" content={KEYWORDS} />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
