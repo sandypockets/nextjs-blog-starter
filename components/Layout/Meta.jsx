@@ -5,7 +5,8 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from '../../lib/constants'
 export default function Meta() {
   return (
     <Head>
-      <link
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link
         rel="apple-touch-icon"
         sizes="180x180"
         href="/favicon/favicon.ico"

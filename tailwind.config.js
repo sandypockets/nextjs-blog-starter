@@ -5,6 +5,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['ui-sans-serif', 'system-ui'],
+        'serif': ['ui-serif', 'Georgia'],
+        'mono': ['ui-monospace', 'SFMono-Regular'],
+        "inter": ['Inter var'],
+      },
       colors: {
         // Custom accent colors.
         'accent-1': '#FAFAFA',

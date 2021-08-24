@@ -44,7 +44,7 @@ export default function Nav({ darkMode, setDarkMode }) {
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   {navigation.map((item, index) => (
                     <Link key={index} href={item.href}>
-                      <a className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">{item.name}</a>
+                      <a className="border-transparent text-gray-500 hover:border-gray-700 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium dark:hover:border-gray-200 dark:hover:text-gray-200">{item.name}</a>
                     </Link>
                   ))}
                 </div>

@@ -20,7 +20,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen dark:text-white dark:bg-black">
+      <div className="min-h-screen dark:text-white dark:bg-black font-inter">
         {/*<Banner preview={preview} />*/}
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
         <main>{children}</main>
