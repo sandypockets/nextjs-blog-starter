@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { BLOG_NAME, KEYWORDS, DESCRIPTION, AUTHOR, LANG } from "../lib/constants";
+import { KEYWORDS, DESCRIPTION, AUTHOR, LANG } from "../lib/constants";
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang={LANG}>
         <Head>
-          <title>{BLOG_NAME}</title>
           <meta name="description" content={DESCRIPTION}></meta>
           <meta name="author" content={AUTHOR}></meta>
           <meta name="keywords" content={KEYWORDS}></meta>
