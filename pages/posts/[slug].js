@@ -8,7 +8,7 @@ import Layout from '../../components/Layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/PostTitle'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
+import { BLOG_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post, morePosts, preview }) {
@@ -27,7 +27,7 @@ export default function Post({ post, morePosts, preview }) {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | {BLOG_NAME}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
