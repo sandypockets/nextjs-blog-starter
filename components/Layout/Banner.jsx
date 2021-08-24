@@ -2,7 +2,7 @@ import Container from './Container'
 import cn from 'classnames'
 import { GITHUB_REPO } from '../../lib/constants'
 
-export default function Alert({ preview }) {
+export default function Banner({ preview }) {
   return (
     <div
       className={cn('border-b', {
