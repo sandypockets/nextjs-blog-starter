@@ -31,7 +31,7 @@ export default function Nav({ darkMode, setDarkMode }) {
             <div className="flex justify-between h-20 dark:bg-black dark:text-white">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  Logo
+                  SANDYPOCKETS
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
