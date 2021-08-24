@@ -7,6 +7,22 @@ function classNames(...classes) {
 
 export default function Toggle({ darkMode, setDarkMode }) {
   const [enabled, setEnabled] = useState(darkMode)
+  useEffect(() => {
+    if (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setDarkMode(true)
+      setEnabled(true)
+    }
+    if ('theme' in localStorage) {
+      if (localStorage.theme === 'light') {
+        setEnabled(false)
+      } else {
+        setEnabled(true)
+      }
+    }
+  })
+
+
+
 
   const toggleTheme = () => {
     enabled ? setEnabled(false) : setEnabled(true)
