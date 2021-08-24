@@ -4,7 +4,7 @@ import Container from '../../components/Container'
 import PostBody from '../../components/PostBody'
 import Header from '../../components/Header'
 import PostHeader from "../../components/PostHeader";
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/PostTitle'
 import Head from 'next/head'
