@@ -1,5 +1,6 @@
+import Link from 'next/link'
 import Container from "./Container";
-import Highlight from "../Highlight";
+import Highlight from "../Utils/Highlight";
 import { BLOG_NAME } from "../../lib/constants";
 
 const navigation = {
@@ -81,9 +82,11 @@ export default function Footer() {
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item, index) => (
               <div key={index} className="px-5 py-2">
-                <a href={item.href} className="text-base text-gray-500 hover:text-gray-900 dark:hover:text-gray-200">
-                  {item.name}
-                </a>
+                <Link href={item.href}>
+                  <a className="text-base text-gray-500 hover:text-gray-900 dark:hover:text-gray-200">
+                    {item.name}
+                  </a>
+                </Link>
               </div>
             ))}
           </nav>
