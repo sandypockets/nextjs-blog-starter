@@ -23,7 +23,7 @@ export default function Layout({ preview, children }) {
       <div className="min-h-screen dark:text-gray-100 dark:bg-black font-inter">
         {/*<Banner preview={preview} />*/}
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
-        <main>{children}</main>
+        <main className="pt-16">{children}</main>
         <Footer />
       </div>
     </>

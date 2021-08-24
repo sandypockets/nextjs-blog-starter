@@ -30,7 +30,7 @@ export default function Nav({ darkMode, setDarkMode }) {
   console.log(currentPath)
 
   return (
-    <Disclosure as="nav" className="bg-white shadow dark:bg-black dark:text-white">
+    <Disclosure as="nav" className="bg-white shadow dark:bg-black dark:text-white fixed top-0 z-30">
       {({ open }) => (
         <>
           <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8 bg-white dark:bg-black dark:text-white">
