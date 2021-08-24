@@ -1,6 +1,7 @@
 import Container from './Container'
 import cn from 'classnames'
 import { GITHUB_REPO } from '../../lib/constants'
+import Toggle from "../Toggle";
 
 export default function Banner({ preview }) {
   return (
@@ -11,9 +12,9 @@ export default function Banner({ preview }) {
       })}
     >
       <Container>
-        <div className="py-2 text-center text-sm">
+        <div className="py-2 text-sm text-center fixed z-30 w-screen">
           {preview ? (
-            <>
+            <div>
               This page is a preview.{' '}
               <a
                 href="/api/exit-preview"
@@ -22,7 +23,7 @@ export default function Banner({ preview }) {
                 Click here
               </a>{' '}
               to exit preview mode.
-            </>
+            </div>
           ) : (
             <>
               The source code for this blog is{' '}
