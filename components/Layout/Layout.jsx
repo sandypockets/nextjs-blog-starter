@@ -6,9 +6,10 @@ import Nav from "./Nav";
 import {useEffect, useState} from "react";
 
 export default function Layout({ preview, children }) {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState()
 
   useEffect(() => {
+    console.log("localStorage Theme - Layout: ", localStorage.theme)
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
       setDarkMode(true)
