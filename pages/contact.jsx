@@ -5,6 +5,7 @@ import Layout from "../components/Layout/Layout";
 import Head from "next/head";
 import Container from "../components/Layout/Container";
 import Intro from "../components/Home/Intro";
+import { BLOG_NAME } from "../lib/constants";
 
 export default class Contact extends Component {
   state = { message: '' }
@@ -29,7 +30,7 @@ export default class Contact extends Component {
     return (
       <Layout>
         <Head>
-          <title>Contact</title>
+          <title>Contact | {BLOG_NAME}</title>
         </Head>
         <Container>
           <Intro />
