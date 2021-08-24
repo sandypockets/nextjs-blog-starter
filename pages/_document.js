@@ -5,7 +5,7 @@ import { GA_TRACKING_ID } from '../lib/gtag'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang={LANG}>
+      <Html lang={LANG} className="dark">
         <Head>
           <meta name="description" content={DESCRIPTION}></meta>
           <meta name="author" content={AUTHOR}></meta>

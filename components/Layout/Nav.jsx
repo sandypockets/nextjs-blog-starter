@@ -22,13 +22,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav() {
+export default function Nav({ darkMode, setDarkMode }) {
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure as="nav" className="bg-white shadow dark:bg-black dark:text-white">
       {({ open }) => (
         <>
-          <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="flex justify-between h-20">
+          <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8 bg-white dark:bg-black dark:text-white">
+            <div className="flex justify-between h-20 dark:bg-black dark:text-white">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                   Logo
@@ -43,7 +43,7 @@ export default function Nav() {
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                <Toggle />
+                <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}

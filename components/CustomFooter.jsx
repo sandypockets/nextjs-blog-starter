@@ -74,7 +74,7 @@ const navigation = {
 
 export default function CustomFooter() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
+    <footer className="bg-accent-1 border-t border-accent-2 dark:bg-black dark:text-white dark:border-black">
       <Container>
         <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
