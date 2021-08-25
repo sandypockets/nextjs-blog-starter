@@ -1,13 +1,13 @@
 ---
 title: 'Why Next.js is the perfect React framework for your blog'
 excerpt: 'A few reasons I keep coming back to Next.js.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
+coverImage: '/assets/blog/nextjs-for-blogs/cover.jpg'
 date: '2021-08-24T05:35:07.322Z'
 author:
   name: sandypockets
   picture: '/assets/blog/authors/sandypockets_avatar.jpg'
 ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
+  url: '/assets/blog/nextjs-for-blogs/cover.jpg'
 ---
 
 You're creating a new blog, and it's come time to choose the tools that you'll build it with. I can't speak to the pros or cons of all the options, but I can share what's caused me to choose Next over and over. 

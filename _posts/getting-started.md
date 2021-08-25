@@ -1,13 +1,13 @@
 ---
 title: 'Getting started with this template'
 excerpt: 'Everything you need to know to get a Next.js blog up and running.'
-coverImage: '/assets/blog/preview/cover.jpg'
+coverImage: '/assets/blog/getting-started/cover.jpg'
 date: '2021-08-24T05:35:07.322Z'
 author:
   name: sandypockets
   picture: '/assets/blog/authors/sandypockets_avatar.jpg'
 ogImage:
-  url: '/assets/blog/preview/cover.jpg'
+  url: '/assets/blog/getting-started/cover.jpg'
 ---
 
 # Getting started
