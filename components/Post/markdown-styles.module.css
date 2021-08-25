@@ -97,7 +97,7 @@
 }
 
 .markdown h5 {
-  @apply text-xl md:text-2xl lg:text-3xl mt-6 mb-4;
+  @apply text-xl md:text-2xl lg:text-3xl mt-8 mb-4;
 }
 
 .markdown h6 {
