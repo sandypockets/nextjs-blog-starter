@@ -17,10 +17,20 @@ Instead, I created my own templates, and packed them full of all the extra featu
 I've always been drawn to the Next.js blog starter. The overall design is clean, but it still lacked features, like Google Analytics, or dark mode, that I'd become accustomed to with my own bespoke templates. _This_ starter, is the result of combining the features I've come to rely on with the OG Next blog starter. 
 
 ## Features
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+### Dark mode
+The app defaults to the user's OS preferences. If the user hasn't selected an OS preference, the theme defaults to light mode. The user can switch between light and dark mode using the toggle in the nav. Dark/light theme preferences are stored on the client, in `localStorage.theme`
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Adding new dark classes is easy. Simply prefix the Tailwind CSS class name with `dark:` and it will be applied during dark mode only. 
 
-## Lorem Ipsum
+### Google Analytics
+Understanding traffic is a big part of blogging. Simply copy your Google ID, paste it into the `.env.local` file, and you're all set. The Google tag is set up to track a number of events, including form submissions. 
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+### Tailwind CSS
+Tailwind keeps CSS manageable, in an understandable, and scalable way. If you're not already familiar with Tailwind, check it out [here](https://tailwindcss.com), and never look back. 
+
+### Storybook
+Storybook helps you build more composable components, by crafting and testing them in isolation. Run `yarn storybook` from the root directory to start Storybook and view stories. 
+
+### Markdown
+All blog posts are written in markdown, so you can focus on your content. Markdown file is prefaced with some front matter at the top of the file. Front matter is special content (existing between a set of `---`) that is similar to metadata. It's parsed using `remark`, and fed into a blog post template. 
+
