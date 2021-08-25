@@ -154,3 +154,9 @@ Adjust the value of each key as needed.
 Next.js makes routing easy. All pages live in the `/pages` directory. The file names used in that directory will map to the path in the browser. 
 
 > Example: `/pages/cool-page.jsx` becomes `localhost:3000/pages/cool-page`
+
+### Manage global data
+
+Global variables, like your blog's name, or your GitHub URL, can be managed in `/lib/constants.js`
+
+You can adjust the blog's metadata (some of which relies on the global variables described above) can be adjusted in the `/components/Layout/Meta.jsx` component. 
