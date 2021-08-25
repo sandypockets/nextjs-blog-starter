@@ -93,10 +93,17 @@ export default function ContactForm() {
               onChange={(e) => handleMessage(e)}
             />
           </div>
-          <div>
+          <div className="flex justify-center">
             <button
               type="submit"
-              className="inline-flex justify-center py-3 px-6 border border-transparent shadow-xs text-base font-medium rounded-md text-white bg-gray-600 dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+              className="
+                        w-full inline-flex justify-center
+                        py-3 px-6
+                        border border-transparent shadow-xs
+                        text-base font-medium rounded-md text-white bg-black
+                        hover:bg-white hover:text-black hover:border-black hover:border-3
+                        dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black
+                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
               onClick={(e) => {handleSubmit(e)}}
               onSubmit={(e) => e.preventDefault()}
             >
