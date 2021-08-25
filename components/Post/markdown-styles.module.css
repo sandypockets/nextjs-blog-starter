@@ -7,7 +7,7 @@
 }
 
 .markdown code {
-  @apply font-mono text-sm font-light text-current
+  @apply font-mono text-sm font-light text-current border border-gray-300 border-opacity-20 p-0.5
 }
 
 .markdown p,
