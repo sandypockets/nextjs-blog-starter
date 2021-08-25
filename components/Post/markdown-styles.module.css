@@ -2,6 +2,10 @@
   @apply text-lg leading-relaxed;
 }
 
+.markdown a {
+  @apply text-blue-500 hover:text-blue-700
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol,
