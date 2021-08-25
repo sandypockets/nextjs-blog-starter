@@ -32,6 +32,10 @@
   @apply text-2xl mt-8 mb-4 leading-snug font-mono;
 }
 
+.markdown p {
+  @apply font-light;
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol,
