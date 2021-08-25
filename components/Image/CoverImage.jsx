@@ -14,6 +14,8 @@ export default function CoverImage({ title, src, slug, height, width, coverImage
       width={width}
       height={height}
       priority={coverImagePriority ? coverImagePriority : false}
+      blurDataURL={src}
+      placeholder="blur"
     />
   )
   return (
