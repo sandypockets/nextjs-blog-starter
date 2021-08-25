@@ -52,7 +52,7 @@
 }
 
 .markdown ul {
-  @apply list-disc ml-10;
+  @apply list-disc ml-10 font-light;
 }
 
 .markdown ul li {

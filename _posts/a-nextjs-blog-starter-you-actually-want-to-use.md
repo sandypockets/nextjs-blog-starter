@@ -37,3 +37,17 @@ Storybook helps you build more composable components, by crafting and testing th
 ### Markdown
 All blog posts are written in markdown, so you can focus on your content. Markdown file is prefaced with some front matter at the top of the file. Front matter is special content (existing between a set of `---`) that is similar to metadata. It's parsed using `remark`, and fed into a blog post template. 
 
+
+You're creating a new blog, and it's come time to choose the tools that you'll build it with. I can't speak to the pros or cons of all the options, but I can share what's caused me to choose Next over and over.
+
+## Markdown
+It's a blog. We're here for the content. You shouldn't be wrangling HTML or CSS. You should be writing. Creating. That's it. And that's exactly what markdown lets you do.
+
+## Statically generated
+Need to show the same page to a bunch of users? Generate it at build. When your users ask for your content, deliver it lightning fast.
+
+## Image optimization
+Defer images you don't need, and prioritize the ones you do. All the while, making sure you're serving up the smallest size possible without sacrificing quality.
+
+## React
+A fast, robust library, with a ton of tools available to help you get the job done, without reinventing the wheel. 
