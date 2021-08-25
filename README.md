@@ -1,18 +1,28 @@
 # Next.js Blog Starter
 A custom Next.js blog starter for use with `create next app`. This starter is based on the original blog starter provided by Next, but includes a few extra features and improvements.
 
+## Built with
+
+* [React]()
+* [Next.js]()
+* [Tailwind CSS]()
+* [Remark]()
+* [Gray Matter]()
+
 ## Core features
 * Write articles in markdown
+* Markdown is already styled. Just start writing.
 * Dark mode based on OS preference, with toggle to manually change.
-* Tailwind CSS
 * Google Analytics
-* Storybook
-
-### Improvements
-* Hero image displayed above the fold receives priority loading.
-* Dark mode detects preference based on user's OS. Dark mode can be manually toggled in the Nav, which then uses localStorage to keep track of the user's preference. 
+* Email contact form (using SendGrid)
+* Tailwind CSS
+* Preformatted code syntax highlighting
+* Priority image downloads for content above the fold, deferred downloads for below it
+* Storybook.js
 
 ## Get started
+This README will guide you through the basic set up. However, please refer to the demo blog posts (no lorem ipsums here, just real, helpful content) for more information. 
+
 ### Create Next App
 You can bootstrap this starter using `create next app`. 
 
@@ -63,13 +73,13 @@ An example of the required front matter:
 ---
 title: 'A blog starter you actually want to use'
 excerpt: 'There are hundreds of different blog starters out there. But none felt quite right. So I built my own. Based off the basic Next.js Blog Starter, but now with several handy features like dark mode (using local storage) or Google Analytics. It comes with Storybook too.'
-coverImage: '/assets/blog/dynamic-routing/tree.jpg'
+coverImage: '/assets/blog/a-nextjs-blog-starter-you-actually-want-to-use/tree-minimal.jpg'
 date: '2021-08-24T05:35:07.322Z'
 author:
   name: sandypockets
   picture: '/assets/blog/authors/sandypockets_avatar.jpg'
 ogImage:
-  url: '/assets/blog/dynamic-routing/tree.jpg'
+  url: '/assets/blog/a-nextjs-blog-starter-you-actually-want-to-use/tree-minimal.jpg'
 ---
 ```
 
@@ -84,5 +94,10 @@ Adjust the value of each key as needed.
 > Note: The slug is the path that will be displayed, and is based on the title of your `.md` file. For example, `kobe.md` becomes `localhost:3000/posts/kobe`
 
 ## Contributing
+Contributions are what make the open source community such an amazing place to be, learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-## Acknowledgements
+1. Fork the Project
+2. Create your Feature or Fix Branch (`git checkout -b feature/AmazingFeature` or `git checkout -b fix/ContactForm` ) 
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
