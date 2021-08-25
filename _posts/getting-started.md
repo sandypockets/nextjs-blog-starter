@@ -68,7 +68,7 @@ next dev
 
 Once the server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Add Google Analytics
+### Set up Google Analytics
 
 You will need to have your Google tag ID. If you do not have one, or do not have a Google Analytics account, you can sign up at [analytics.google.com](https://analytics.google.com/)
 
@@ -79,6 +79,13 @@ cp .env.local.example .env.local
 ```
 
 2. Grab your Google tag ID from your Analytics account, and replace the `G-XXXXXXXXXX` in the new `.env.local` file you just created.
+
+### Set up SendGrid
+You will need a free SendGrid account, which allows you to send up to 100 emails each day. Replace the `REPLACE-WITH-YOUR-API-KEY` text in the `.env.exa
+
+1. Get your SendGrid API key from your SendGrid account.
+2. Open the `.env.local` file that you created when setting up Google Analytics.
+3. Replace `REPLACE-WITH-YOUR-API-KEY` with your actual API key from SendGrid.
 
 ### Storybook
 
