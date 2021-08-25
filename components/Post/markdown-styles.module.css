@@ -83,3 +83,7 @@
 .markdown h6 {
   @apply text-xl md:text-2xl lg:text-3xl mt-6 mb-3;
 }
+
+.markdown table {
+  @apply table-auto;
+}
