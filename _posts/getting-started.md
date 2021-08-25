@@ -78,7 +78,7 @@ You will need to have your Google tag ID. If you do not have one, or do not have
 cp .env.local.example .env.local
 ```
 
-2. Grab your Google tag ID from your Analytics account, and replace the `123` in the new `.env.local` file you just created.
+2. Grab your Google tag ID from your Analytics account, and replace the `G-XXXXXXXXXX` in the new `.env.local` file you just created.
 
 ### Storybook
 
