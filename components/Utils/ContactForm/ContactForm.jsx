@@ -32,7 +32,6 @@ export default function ContactForm() {
     })
   }
 
-
   return (
     <div className="bg-white dark:bg-black py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
       <div className="max-w-lg mx-auto lg:max-w-none">
@@ -46,7 +45,11 @@ export default function ContactForm() {
               name="full-name"
               id="full-name"
               autoComplete="name"
-              className="block w-full shadow-xs py-3 px-4 placeholder-gray-300 focus:ring-gray-500 focus:border-gray-500 border-gray-300 dark:bg-black rounded-md"
+              className="block w-full shadow-xs py-3 rounded-md
+                          px-4placeholder-gray-300
+                          focus:ring-gray-500 focus:border-gray-500
+                          border-gray-300
+                          dark:bg-black"
               placeholder="Full name"
               onChange={(e) => handleName(e)}
             />
@@ -60,7 +63,11 @@ export default function ContactForm() {
               name="email"
               type="email"
               autoComplete="email"
-              className="block w-full shadow-xs py-3 px-4 placeholder-gray-300 focus:ring-gray-500 focus:border-gray-500 border-gray-300 dark:bg-black rounded-md"
+              className="block w-full shadow-xs py-3 px-4 rounded-md
+                         placeholder-gray-300
+                         focus:ring-gray-500 focus:border-gray-500
+                         border-gray-300
+                         dark:bg-black"
               placeholder="Email"
               onChange={(e) => handleEmail(e)}
             />
@@ -74,7 +81,11 @@ export default function ContactForm() {
               name="phone"
               id="phone"
               autoComplete="tel"
-              className="block w-full shadow-xs py-3 px-4 placeholder-gray-300 focus:ring-gray-500 focus:border-gray-500 border-gray-300 dark:bg-black rounded-md"
+              className="block w-full shadow-xs py-3 px-4 rounded-md
+                        placeholder-gray-300
+                        focus:ring-gray-500 focus:border-gray-500
+                        border-gray-300
+                        dark:bg-black"
               placeholder="Phone"
               onChange={(e) => handlePhone(e)}
             />
@@ -87,7 +98,11 @@ export default function ContactForm() {
               id="message"
               name="message"
               rows={4}
-              className="block w-full shadow-xs py-3 px-4 placeholder-gray-300 focus:ring-gray-500 focus:border-gray-500 border border-gray-300 dark:bg-black rounded-md"
+              className="block w-full shadow-xs py-3 px-4
+                        rounded-md placeholder-gray-300
+                        focus:ring-gray-500 focus:border-gray-500
+                        border border-gray-300
+                        dark:bg-black"
               placeholder="Message"
               defaultValue={''}
               onChange={(e) => handleMessage(e)}
@@ -96,8 +111,7 @@ export default function ContactForm() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="
-                        w-full inline-flex justify-center
+              className="w-full inline-flex justify-center
                         py-3 px-6
                         border border-transparent shadow-xs
                         text-base font-medium rounded-md text-white bg-black
