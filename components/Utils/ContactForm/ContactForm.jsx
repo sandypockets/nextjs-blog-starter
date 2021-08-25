@@ -26,9 +26,8 @@ export default function ContactForm() {
     })
 
     const msg = {
-      subject: `${formContents.email} ${formContents.name}`,
-      text: formContents.message,
-      html: `<strong>${formContents.name}, ${formContents.email}, ${formContents.message}</strong>`,
+      subject: `New message from ${formContents.name} 👋`,
+      text: `${formContents.name}, ${formContents.email} - ${formContents.message}`,
     }
 
     axios.post('/api/email', {
