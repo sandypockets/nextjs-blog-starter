@@ -21,7 +21,7 @@
 }
 
 .markdown pre {
-  @apply border border-gray-300 border-opacity-20 pl-5 px-1 py-5 overflow-scroll overscroll-contain whitespace-pre;
+  @apply border border-gray-300 border-opacity-40 rounded-sm pl-5 px-1 py-5 overflow-scroll whitespace-pre;
 }
 
 .markdown h2 > code {
