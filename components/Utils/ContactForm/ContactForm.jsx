@@ -1,8 +1,8 @@
 import { useState } from "react";
 import * as gtag from "../../../lib/gtag";
+import axios from 'axios'
 
 export default function ContactForm() {
-
   const [formContents, setFormContents] = useState({
     name: '',
     email: '',
@@ -16,7 +16,7 @@ export default function ContactForm() {
   const handleMessage = e => {setFormContents(prev => ({ ...prev, message: e.target.value }))}
 
   const handleSubmit = e => {
-    console.log(formContents)
+    console.log("19 - formContents: ", formContents)
     e.preventDefault()
     gtag.event({
       action: 'submit_form',
@@ -24,6 +24,23 @@ export default function ContactForm() {
       label: `Contact: ${formContents.email}`,
       value: formContents.message
     })
+
+    const msg = {
+      subject: `${formContents.email} ${formContents.name}`,
+      text: formContents.message,
+      html: `<strong>${formContents.name}, ${formContents.email}, ${formContents.message}</strong>`,
+    }
+
+    axios.post('/api/email', {
+      msg,
+    })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
     setFormContents({
       name: '',
       email: '',

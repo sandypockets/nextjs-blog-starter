@@ -12,7 +12,9 @@
   "dependencies": {
     "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.4",
+    "@sendgrid/mail": "^7.4.6",
     "@tailwindcss/forms": "^0.3.3",
+    "axios": "^0.21.1",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
