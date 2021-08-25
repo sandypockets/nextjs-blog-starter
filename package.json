@@ -1,4 +1,6 @@
 {
+  "name": "nextjs-blog-starter",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next",
