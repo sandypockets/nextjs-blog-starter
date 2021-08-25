@@ -250,10 +250,10 @@ And many more. Check out the [full list of supported langauges](https://prismjs.
 
 ### Collapsible summaries
 
-```ejs
+```markdown
 <details>
   <summary>Click to open or close</summary>
-      ```
+      ```ejs
   <div class="row" id="productList">
     <% for(let item in product) { %>
       <div class="card">
