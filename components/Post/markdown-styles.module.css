@@ -3,11 +3,33 @@
 }
 
 .markdown a {
-  @apply text-blue-500 hover:text-blue-700
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+.markdown code,
+.markdown pre,
+.markdown pre > code {
+  @apply font-mono text-sm font-light text-current
 }
 
 .markdown code {
-  @apply font-mono text-sm font-light text-current border border-gray-300 border-opacity-20 p-0.5
+  @apply border border-gray-300 border-opacity-25 p-0.5;
+}
+
+.markdown pre > code {
+  @apply p-0.5 border-0;
+}
+
+.markdown pre {
+  @apply border border-gray-300 border-opacity-20 pl-5 px-1 py-5 overflow-scroll overscroll-contain whitespace-pre;
+}
+
+.markdown h2 > code {
+  @apply text-3xl mt-12 mb-4 leading-snug font-mono;
+}
+
+.markdown h3 > code {
+  @apply text-2xl mt-8 mb-4 leading-snug font-mono;
 }
 
 .markdown p,
@@ -17,10 +39,47 @@
   @apply my-6;
 }
 
+.markdown ul {
+  @apply list-disc ml-10;
+}
+
+.markdown ul li {
+  @apply px-0 py-2;
+}
+
+.markdown ol {
+  @apply list-decimal mx-10 font-light;
+}
+
+.markdown ol li {
+  @apply px-0 py-2;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply font-bold tracking-tighter leading-tight;
+}
+
+.markdown h1 {
+  @apply text-4xl md:text-6xl lg:text-7xl mt-14 mb-4;
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-4xl md:text-5xl lg:text-6xl mt-12 mb-4;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-3xl md:text-4xl lg:text-5xl mt-8 mb-4;
+}
+
+.markdown h5 {
+  @apply text-2xl md:text-3xl lg:text-4xl mt-6 mb-3;
+}
+
+.markdown h6 {
+  @apply text-xl md:text-2xl lg:text-3xl mt-6 mb-3;
 }
