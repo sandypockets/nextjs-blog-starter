@@ -22,6 +22,9 @@ The app defaults to the user's OS preferences. If the user hasn't selected an OS
 
 Adding new dark classes is easy. Simply prefix the Tailwind CSS class name with `dark:` and it will be applied during dark mode only. 
 
+### Syntax highlighting
+Is your blog code heavy? Tutorials? All code blocks are highlighted with Prism. The theme can be adjusted in the Meta component. 
+
 ### Google Analytics
 Understanding traffic is a big part of blogging. Simply copy your Google ID, paste it into the `.env.local` file, and you're all set. The Google tag is set up to track a number of events, including form submissions. 
 
