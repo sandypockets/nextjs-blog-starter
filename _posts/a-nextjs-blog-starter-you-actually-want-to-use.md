@@ -1,7 +1,7 @@
 ---
 title: 'A blog starter you actually want to use'
 excerpt: 'There are hundreds of different blog starters out there. But none felt quite right. So I built my own. Based off the basic Next.js Blog Starter, but now with several handy features like dark mode (using local storage) or Google Analytics. It comes with Storybook too.'
-coverImage: '/assets/blog/a-nextjs-blog-starter-you-actually-want-to-use/tree.jpg'
+coverImage: '/assets/blog/a-nextjs-blog-starter-you-actually-want-to-use/tree-minimal.jpg'
 date: '2021-08-24T05:35:07.322Z'
 author:
   name: sandypockets
