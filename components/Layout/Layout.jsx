@@ -3,11 +3,10 @@ import Footer from "./Footer";
 import Meta from './Meta'
 import Nav from "./Nav";
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState()
 
   useEffect(() => {
-    console.log("localStorage Theme - Layout: ", localStorage.theme)
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
       setDarkMode(true)
@@ -21,9 +20,8 @@ export default function Layout({ preview, children }) {
     <>
       <Meta />
       <div className="min-h-screen dark:text-gray-100 dark:bg-black font-inter">
-        {/*<Banner preview={preview} />*/}
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
-        <main className="pt-16">{children}</main>
+        <main className="pt-20">{children}</main>
         <Footer />
       </div>
     </>
