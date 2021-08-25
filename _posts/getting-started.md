@@ -44,12 +44,13 @@ Some other things
 * five
 * six
 
-### Add Google Analytics
-Create a copy of the `.env.local.example` file, and name it `.env.local`. In the terminal, run:
+### Add Google Analytics 📈
+Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque.
+1. Create a copy of the `.env.local.example` file, and name it `.env.local`. In the terminal, run:
 ```shell
 cp .env.local.example .env.local
 ```
-Grab your Google tag ID from your Analytics account, and replace the `123` in the new `.env.local` file you just created.
+2. Grab your Google tag ID from your Analytics account, and replace the `123` in the new `.env.local` file you just created.
 
 
 ## Lorem Ipsum
