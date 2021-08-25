@@ -1,13 +1,36 @@
 # Next.js Blog Starter
 A custom Next.js blog starter for use with `create next app`. This starter is based on the original blog starter provided by Next, but includes a few extra features and improvements.
 
+# Contents
+* [Preview](https://github.com/sandypockets/nextjs-blog-starter#preview)
+* [Live demo](https://github.com/sandypockets/nextjs-blog-starter#live-demo)
+* [Built with](https://github.com/sandypockets/nextjs-blog-starter#built-with)
+* [Core features](https://github.com/sandypockets/nextjs-blog-starter#core-features)
+* [Get started](https://github.com/sandypockets/nextjs-blog-starter#get-started)
+  * [create next app](https://github.com/sandypockets/nextjs-blog-starter#create-next-app)
+  * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
+    * [Dev dependencies](https://github.com/sandypockets/nextjs-blog-starter#dev-dependencies)
+* [How it works](https://github.com/sandypockets/nextjs-blog-starter#how-it-works)
+  * [Front matter](https://github.com/sandypockets/nextjs-blog-starter#front-matter)
+  * [Create a new article](https://github.com/sandypockets/nextjs-blog-starter#create-a-new-article)
+* [Contributing](https://github.com/sandypockets/nextjs-blog-starter#contributing)
+
+## Preview
+Preview the example live on [StackBlitz](http://stackblitz.com/):
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/sandypockets/nextjs-blog-starter/tree/main)
+
+## Live demo
+
+Link to the live demo.
+
 ## Built with
 
-* [React]()
-* [Next.js]()
-* [Tailwind CSS]()
-* [Remark]()
-* [Gray Matter]()
+* [React](https://reactjs.org/docs/getting-started.html)
+* [Next.js](https://nextjs.org/docs/getting-started)
+* [Tailwind CSS](https://tailwindcss.com/docs/utility-first)
+* [Remark](https://remark.js.org/)
+* [Gray Matter](https://github.com/jonschlinkert/gray-matter)
 
 ## Core features
 * Write articles in markdown
@@ -21,19 +44,19 @@ A custom Next.js blog starter for use with `create next app`. This starter is ba
 * Storybook.js
 
 ## Get started
-This README will guide you through the basic set up. However, please refer to the demo blog posts (no lorem ipsums here, just real, helpful content) for more information. 
+This README will guide you through the basic set up. However, please refer to the blog posts in the [live demo](https://github.com/sandypockets/nextjs-blog-starter#live-demo) for more information. Don't worry, no lorem ipsums here. Each post contains real, actually helpful content. 
 
 ### Create Next App
 You can bootstrap this starter using `create next app`. 
 
 ```shell
 # with npm
-npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter
+npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main
 ```
 
 ```shell
 # with yarn
-yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter
+yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main
 ```
 
 ### Dependencies

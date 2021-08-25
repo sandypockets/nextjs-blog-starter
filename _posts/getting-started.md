@@ -23,14 +23,14 @@ Create Next App is the fastest way to begin using this blog starter. You can use
 
 ```
 # with npm
-npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter my-new-blog
+npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main my-new-blog
 ```
 
 <br/>
 
 ```shell
 # with yarn
-yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter my-new-blog
+yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main my-new-blog
 ```
 
 2. Once the project is created, change into the directory. 
@@ -45,7 +45,7 @@ cd my-new-blog
 yarn install
 ```
 
-or if you used npm:
+or if you used npm
 
 ```shell
 npm install
