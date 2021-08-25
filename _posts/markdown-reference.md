@@ -244,8 +244,65 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-
-
 And many more. Check out the [full list of supported langauges](https://prismjs.com/#supported-languages) on PrismJS.
 
 ---
+
+### Collapsible summaries
+
+```ejs
+<details>
+  <summary>Click to open or close</summary>
+      ```
+  <div class="row" id="productList">
+    <% for(let item in product) { %>
+      <div class="card">
+        <p class="get-ids"><%= product[item].id %></p>
+        <img src="<%= product[item].image %>" class="card-img-top" alt="...">
+        <h3 class="card-title">
+          <%= product[item].name %>
+        </h3>
+        <p class="card-body">
+          <%= product[item].description %>
+        </p>
+        <div class="card-footer">
+          <p>$ </p>
+          <h5><%= product[item]['price_cents'] %></h5>
+          <a href="#"><i class="fas fa-cart-plus add-burg-event"></i></a>
+        </div>
+      </div>
+      <% } %>
+  </div>
+      ```
+</details>
+```
+
+<br/>
+
+<details>
+<summary>Click to open or close</summary>
+
+```ejs
+<div class="row" id="productList">
+  <% for(let item in product) { %>
+    <div class="card">
+      <p class="get-ids"><%= product[item].id %></p>
+      <img src="<%= product[item].image %>" class="card-img-top" alt="...">
+      <h3 class="card-title">
+        <%= product[item].name %>
+      </h3>
+      <p class="card-body">
+        <%= product[item].description %>
+      </p>
+      <div class="card-footer">
+        <p>$ </p>
+        <h5><%= product[item]['price_cents'] %></h5>
+        <a href="#"><i class="fas fa-cart-plus add-burg-event"></i></a>
+      </div>
+    </div>
+    <% } %>
+</div>
+```
+
+</details>
+
