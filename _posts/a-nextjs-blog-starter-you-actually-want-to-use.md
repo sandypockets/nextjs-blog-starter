@@ -12,7 +12,7 @@ ogImage:
 
 There are hundreds of Next.js blog starters out there. I've tinkered with a few dozen of them, and while there are many that are quite good, they just didn't seem to fit what I wanted to do with them. Nothing was ready out of the box. That's fine for some projects, but for others, I'm not looking to reinvent the wheel. 
 
-I've always been drawn to the Next.js blog starter. The overall design is clean, and it supports markdown, though it doesn't come with much styling for it. But still lacked features, like Google Analytics, dark mode, or syntax highlighting, that I'd become accustomed to with my own bespoke templates. _This_ starter, is the result of combining the features I've come to rely on with the OG Next blog starter. 
+I've always been drawn to the Next.js blog starter. The overall design is clean, and it supports markdown, though it doesn't come with much styling for it. But still lacked features, like Google Analytics, dark mode, or syntax highlighting, that I'd become accustomed to with my own bespoke templates. _This_ starter, is the result of combining the features I've come to rely on with much of the OG Next blog starter's slick layout. 
 
 ## Features ✨
 
@@ -40,7 +40,7 @@ It's a blog. We're here for the content. You shouldn't be wrangling HTML or CSS.
 Need to show the same page to a bunch of users? Generate it at build. When your users ask for your content, deliver it lightning fast.
 
 ##### Image optimization
-Defer images you don't need, and prioritize the ones you do. All the while, making sure you're serving up the smallest size possible without sacrificing quality. For example, the hero image on the homepage receives priority (since it's above the fold), while the images below the fold, in the "More stories" section, will be deferred. 
+Defer images you don't need, and prioritize the ones you do. All the while, making sure you're serving up the smallest size possible without sacrificing quality. For example, the hero image on the homepage receives priority (since it's above the fold), while the images below the fold, in the "More stories" section, will be deferred. The same is true for the hero image on each blog post's page.
 
 ##### React
 A fast, robust library. Popular enough that you'll always be able to find the tools and packages you need to build out custom features. 
