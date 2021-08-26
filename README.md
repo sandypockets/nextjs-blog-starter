@@ -4,6 +4,7 @@ A custom Next.js blog starter for use with `create next app`. This starter is ba
 # Contents
 * [Preview](https://github.com/sandypockets/nextjs-blog-starter#preview)
 * [Live demo](https://github.com/sandypockets/nextjs-blog-starter#live-demo)
+* [Deploy your own](https://github.com/sandypockets/nextjs-blog-starter#deploy-your-own)
 * [Built with](https://github.com/sandypockets/nextjs-blog-starter#built-with)
 * [Core features](https://github.com/sandypockets/nextjs-blog-starter#core-features)
 * [Get started](https://github.com/sandypockets/nextjs-blog-starter#get-started)
