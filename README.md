@@ -91,7 +91,7 @@ cp .env.local.example .env.local
 2. Grab your Google tag ID from your Analytics account, and replace the `G-XXXXXXXXXX` in the new `.env.local` file you just created.
 
 ### Set up SendGrid
-You will need a free SendGrid account, which allows you to send up to 100 emails each day. Replace the `REPLACE-WITH-YOUR-API-KEY` text in the `.env.exa
+You will need a free SendGrid account, which allows you to send up to 100 emails each day.
 
 1. Get your SendGrid API key from your SendGrid account.
 2. Open the `.env.local` file that you created when setting up Google Analytics.
