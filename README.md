@@ -55,6 +55,8 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 ## Get started
 This README will guide you through the basic set up. However, please refer to the blog posts in the [live demo](https://github.com/sandypockets/nextjs-blog-starter#live-demo) for more information. Don't worry, no lorem ipsums here. Each post contains real, actually helpful content. 
 
+Built and tested with Node 14
+
 ### Create Next App
 1. Bootstrap this starter using `create next app`.
 ```shell
