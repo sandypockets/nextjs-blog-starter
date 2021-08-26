@@ -1,5 +1,5 @@
 # Next.js Blog Starter
-A custom Next.js blog starter for use with `create next app`. This starter is based on the original blog starter provided by Next, but includes a few extra features and improvements.
+A custom Next.js blog starter for use with `create next app`. This starter is based on the original blog starter provided by Next, but includes a few extra features and performance improvements that are nice to have right out of the box. 
 
 # Contents
 * [Preview](https://github.com/sandypockets/nextjs-blog-starter#preview)
@@ -9,8 +9,10 @@ A custom Next.js blog starter for use with `create next app`. This starter is ba
 * [Core features](https://github.com/sandypockets/nextjs-blog-starter#core-features)
 * [Get started](https://github.com/sandypockets/nextjs-blog-starter#get-started)
   * [create next app](https://github.com/sandypockets/nextjs-blog-starter#create-next-app)
-  * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
-    * [Dev dependencies](https://github.com/sandypockets/nextjs-blog-starter#dev-dependencies)
+  * [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
+  * [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid)
+* [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
+  * [Dev dependencies](https://github.com/sandypockets/nextjs-blog-starter#dev-dependencies)
 * [How it works](https://github.com/sandypockets/nextjs-blog-starter#how-it-works)
   * [Front matter](https://github.com/sandypockets/nextjs-blog-starter#front-matter)
   * [Create a new article](https://github.com/sandypockets/nextjs-blog-starter#create-a-new-article)
@@ -54,19 +56,51 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 This README will guide you through the basic set up. However, please refer to the blog posts in the [live demo](https://github.com/sandypockets/nextjs-blog-starter#live-demo) for more information. Don't worry, no lorem ipsums here. Each post contains real, actually helpful content. 
 
 ### Create Next App
-You can bootstrap this starter using `create next app`. 
-
+1. Bootstrap this starter using `create next app`.
 ```shell
-# with npm
-npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main
-```
-
-```shell
-# with yarn
 yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main
 ```
 
-### Dependencies
+2. Change into the new project directory.
+```shell
+cd nextjs-blog-starter
+```
+
+3. Install dependencies.
+```shell
+yarn install
+```
+
+4. Start the development server.
+
+```shell
+yarn dev
+```
+
+5. Once the server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
+6. [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
+7. [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid). 
+
+### Set up Google Analytics
+
+You will need to have your Google tag ID. If you do not have one, or do not have a Google Analytics account, you can sign up at [analytics.google.com](https://analytics.google.com/)
+
+1. Create a copy of the `.env.local.example` file, and name it `.env.local`. To do so in the terminal, run:
+
+```shell
+cp .env.local.example .env.local
+```
+
+2. Grab your Google tag ID from your Analytics account, and replace the `G-XXXXXXXXXX` in the new `.env.local` file you just created.
+
+### Set up SendGrid
+You will need a free SendGrid account, which allows you to send up to 100 emails each day. Replace the `REPLACE-WITH-YOUR-API-KEY` text in the `.env.exa
+
+1. Get your SendGrid API key from your SendGrid account.
+2. Open the `.env.local` file that you created when setting up Google Analytics.
+3. Replace `REPLACE-WITH-YOUR-API-KEY` with your actual API key from SendGrid.
+
+## Dependencies
 * @headlessui/react `^1.4.0`
 * @heroicons/react `^1.0.4`
 * @sendgrid/mail `^7.4.6`
@@ -82,7 +116,7 @@ yarn create next-app --example https://github.com/sandypockets/nextjs-blog-start
 * remark-html `13.0.1`
 * remark-prism `^1.3.6`
 
-#### Dev Dependencies
+### Dev Dependencies
 * @babel/core `7.15.0`
 * @storybook/addon-actions `^6.3.7`
 * @storybook/addon-essentials `^6.3.7`
@@ -101,7 +135,7 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 ### Front matter
 An example of the required front matter:
 
-> Note: The formatting of the front matter is important. Ensure the indentation remains the same. 
+> Note: The formatting of the front matter is important. Ensure the indentation, and quotes remain the same. 
 
 ```text
 ---
