@@ -25,7 +25,7 @@ Preview the example live on [StackBlitz](http://stackblitz.com/):
 
 ## Live demo
 
-Link to the live demo.
+Check out the live demo at [blog-starter.sandypockets.dev](https://blog-starter.sandypockets.dev/).
 
 ## Deploy your own
 
