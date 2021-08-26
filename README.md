@@ -60,7 +60,7 @@ Built and tested with Node 14
 ### Create Next App
 1. Bootstrap this starter using `create next app`.
 ```shell
-yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main
+yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
 ```
 
 2. Change into the new project directory.
@@ -68,12 +68,7 @@ yarn create next-app --example https://github.com/sandypockets/nextjs-blog-start
 cd nextjs-blog-starter
 ```
 
-3. Install dependencies.
-```shell
-yarn install
-```
-
-4. Start the development server.
+3. Start the development server.
 
 ```shell
 yarn dev
