@@ -62,7 +62,10 @@ yarn create next-app --example https://github.com/sandypockets/nextjs-blog-start
 ### Dependencies
 * @headlessui/react `^1.4.0`
 * @heroicons/react `^1.0.4`
+* @sendgrid/mail `^7.4.6`
 * classnames `2.2.6`
+* @tailwindcss/forms `^0.3.3`
+* axios `^0.21.1`
 * date-fns `2.16.1`
 * gray-matter `4.0.2`
 * next `latest`
@@ -70,6 +73,7 @@ yarn create next-app --example https://github.com/sandypockets/nextjs-blog-start
 * react-dom `^17.0.2`
 * remark `13.0.0`
 * remark-html `13.0.1`
+* remark-prism `^1.3.6`
 
 #### Dev Dependencies
 * @babel/core `7.15.0`
