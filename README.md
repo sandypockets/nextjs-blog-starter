@@ -24,6 +24,12 @@ Preview the example live on [StackBlitz](http://stackblitz.com/):
 
 Link to the live demo.
 
+## Deploy your own
+
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=sandypockets):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/sandypockets/nextjs-blog-starter/tree/main&project-name=sandypockets-blog-starter&repository-name=sandypockets-blog-starter)
+
 ## Built with
 
 * [React](https://reactjs.org/docs/getting-started.html)
