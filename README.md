@@ -1,5 +1,5 @@
 # Next.js Blog Starter
-A custom Next.js blog starter for use with `create next app`. This starter is based on the original blog starter provided by Next, but includes a few extra features and performance improvements that are nice to have right out of the box. 
+A custom Next.js blog starter for use with [`create next app`](https://nextjs.org/docs/api-reference/create-next-app). This starter is based on the original blog starter provided by Next, but includes a few extra features and performance improvements that are nice to have right out of the box. 
 
 # Contents
 * [Preview](https://github.com/sandypockets/nextjs-blog-starter#preview)
