@@ -68,6 +68,56 @@ next dev
 
 Once the server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Constants
+
+Set up each of the constants, much like you would a `.env`, in the `lib/constants.js` file.
+
+```javascript
+export const EXAMPLE_PATH = 'blog-starter'
+export const CMS_NAME = 'Markdown'
+export const HOME_OG_IMAGE_URL = 'https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg'
+export const BLOG_NAME = 'Next.js Blog Starter'
+export const KEYWORDS = 'starter, blog, next.js, template'
+export const DESCRIPTION = 'A starter blog template for Next.js'
+export const AUTHOR = 'sandypockets'
+export const LANG = 'en-CA'
+export const GITHUB_REPO = 'https://github.com/sandypockets'
+```
+
+### Generate a sitemap and robots.txt
+
+Sitemaps are an important part of SEO. This section walks through adding your base URL to the sitemap generator. The generator runs automatically after each build, generating a new sitemap each time you update your blog.
+
+The generated sitemap can be found in `public/sitemap.xml`. This command also generates a new `public/robots.txt` file.
+
+1. Open the `scripts/generate.sitemap.mjs` file.
+2. On Line 5, replace `https://blog-starter.sandypockets.dev` with your own blog's website.
+3. On Line 6, replace `en-CA` with your preferred locale (`en-UK`, `en-US`, etc.). This is used to determine the format of the date stamp in the sitemap.
+
+When you're ready to test it:
+
+1. Run `yarn build`
+2. Check the `public/` directory for the `sitemap.xml` file and `robots.txt` file.
+3. Run `yarn start`
+4. Visit `http://localhost:3000/sitemap.xml`
+
+If you see the xml sitemap, then it was successful.
+
+### RSS Feed
+An RSS feed is available for the blog at `/feed.xml`. However, you must first configure the RSS generator to use your own URL.
+
+1. Open the `scripts/generate-rss.mjs` file.
+2. On Line 7, replace the `https://blog-starter.sandypockets.dev` value of `BLOG_URL` with your own.
+
+When you're ready to test it:
+
+1. Run `yarn build`
+2. Check the `public/` directory for the `feed.xml` file.
+3. Run `yarn start`
+4. Visit `http://localhost:3000/feed.xml`
+
+If you see the xml RSS feed, then it was successful.
+
 ### Set up Google Analytics
 
 You will need to have your Google tag ID. If you do not have one, or do not have a Google Analytics account, you can sign up at [analytics.google.com](https://analytics.google.com/)
