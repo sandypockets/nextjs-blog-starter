@@ -11,6 +11,7 @@ A custom Next.js blog starter for use with [`create next app`](https://nextjs.or
   * [create next app](https://github.com/sandypockets/nextjs-blog-starter#create-next-app)
   * [Set up constants](https://github.com/sandypockets/nextjs-blog-starter#constants)
   * [Generate a sitemap and robots.txt](https://github.com/sandypockets/nextjs-blog-starter#generate-a-sitemap-and-robotstxt)
+  * [RSS feed](https://github.com/sandypockets/nextjs-blog-starter#rss-feed)
   * [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
   * [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid)
 * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
@@ -34,6 +35,9 @@ Check out the live demo at [blog-starter.sandypockets.dev](https://blog-starter.
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=sandypockets):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/sandypockets/nextjs-blog-starter/tree/main&project-name=sandypockets-blog-starter&repository-name=sandypockets-blog-starter)
+
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandypockets/nextjs-blog-starter/tree/main)
+
 
 ## Built with
 
@@ -115,7 +119,22 @@ When you're ready to test it:
 3. Run `yarn start`
 4. Visit `http://localhost:3000/sitemap.xml`
 
-If you see the xml sitemap, then you're all set.
+If you see the xml sitemap, then it was successful.
+
+### RSS Feed
+An RSS feed is available for the blog at `/feed.xml`. However, you must first configure the RSS generator to use your own URL.
+
+1. Open the `scripts/generate-rss.mjs` file.
+2. On Line 7, replace the `https://blog-starter.sandypockets.dev` value of `BLOG_URL` with your own.
+
+When you're ready to test it:
+
+1. Run `yarn build`
+2. Check the `public/` directory for the `feed.xml` file.
+3. Run `yarn start`
+4. Visit `http://localhost:3000/feed.xml`
+
+If you see the xml RSS feed, then it was successful.
 
 ### Set up Google Analytics
 
