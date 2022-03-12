@@ -9,6 +9,8 @@ A custom Next.js blog starter for use with [`create next app`](https://nextjs.or
 * [Core features](https://github.com/sandypockets/nextjs-blog-starter#core-features)
 * [Get started](https://github.com/sandypockets/nextjs-blog-starter#get-started)
   * [create next app](https://github.com/sandypockets/nextjs-blog-starter#create-next-app)
+  * [Set up constants](https://github.com/sandypockets/nextjs-blog-starter#set-up-constants)
+  * [Generate a sitemap and robots.txt](https://github.com/sandypockets/nextjs-blog-starter#generate-a-sitemap-and-robots-txt)
   * [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
   * [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid)
 * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
@@ -25,7 +27,7 @@ Preview the example live on [StackBlitz](http://stackblitz.com/):
 
 ## Live demo
 
-Check out the live demo at [blog-starter.sandypockets.dev](https://blog-starter.sandypockets.dev/).
+Check out the live demo at [blog-starter.sandypockets.dev](https://blog-starter.sandypockets.dev/), or see it in production as my actual blog at [sandypockets.dev](https://sandypockets.dev), generated using [`create-next-app`](https://github.com/sandypockets/nextjs-blog-starter#create-next-app)
 
 ## Deploy your own
 
@@ -47,9 +49,10 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 * Dark mode based on OS preference, with toggle to manually change.
 * Google Analytics
 * Email contact form (using SendGrid)
-* Tailwind CSS
+* Tailwind CSS v3.0
 * Preformatted code syntax highlighting
 * Priority image downloads for content above the fold, deferred downloads for below it
+* Automatically generated sitemap and robots.txt
 * Storybook.js
 
 ## Get started
@@ -75,8 +78,44 @@ yarn dev
 ```
 
 5. Once the server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
-6. [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
-7. [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid). 
+6. Set up constant variables, and prepare to generate a sitemap.
+7. [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
+8. [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid).
+
+### Constants
+
+Set up each of the constants, much like you would a `.env`, in the `lib/constants.js` file.   
+
+```javascript
+export const EXAMPLE_PATH = 'blog-starter'
+export const CMS_NAME = 'Markdown'
+export const HOME_OG_IMAGE_URL = 'https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg'
+export const BLOG_NAME = 'Next.js Blog Starter'
+export const KEYWORDS = 'starter, blog, next.js, template'
+export const DESCRIPTION = 'A starter blog template for Next.js'
+export const AUTHOR = 'sandypockets'
+export const LANG = 'en-CA'
+export const GITHUB_REPO = 'https://github.com/sandypockets'
+```
+
+### Generate a sitemap and robots.txt
+
+Sitemaps are an important part of SEO. This section walks through adding your base URL to the sitemap generator. The generator runs automatically after each build, generating a new sitemap each time you update your blog. 
+
+The generated sitemap can be found in `public/sitemap.xml`. This command also generates a new `public/robots.txt` file.
+
+1. Open the `scripts/generate.sitemap.mjs` file.
+2. On Line 5, replace `https://blog-starter.sandypockets.dev` with your own blog's website.
+3. On Line 6, replace `en-CA` with your preferred locale (`en-UK`, `en-US`, etc.). This is used to determine the format of the date stamp in the sitemap.  
+
+When you're ready to test it:
+
+1. Run `yarn build`
+2. Check the `public/` directory for the `sitemap.xml` file and `robots.txt` file.
+3. Run `yarn start`
+4. Visit `http://localhost:3000/sitemap.xml`
+
+If you see the xml sitemap, then you're all set.
 
 ### Set up Google Analytics
 
@@ -102,8 +141,8 @@ You will need a free SendGrid account, which allows you to send up to 100 emails
 * @heroicons/react `^1.0.4`
 * @sendgrid/mail `^7.4.6`
 * classnames `2.2.6`
-* @tailwindcss/forms `^0.3.3`
-* axios `^0.21.1`
+* @tailwindcss/forms `^0.4.0`
+* axios `^0.24.0`
 * date-fns `2.16.1`
 * gray-matter `4.0.2`
 * next `latest`
@@ -119,10 +158,12 @@ You will need a free SendGrid account, which allows you to send up to 100 emails
 * @storybook/addon-essentials `^6.3.7`
 * @storybook/addon-links `^6.3.7`
 * @storybook/react `^6.3.7`
-* autoprefixer `^10.2.1`
+* autoprefixer `^10.4.0`
 * babel-loader `^8.2.2`
-* postcss `^8.2.4`
-* tailwindcss `npm:@tailwindcss/postcss7-compat@^2.2.4`
+* globby `^13.1.1`
+* postcss `^8.4.5`
+* prettier `^2.5.1`
+* tailwindcss `3.0.5`
 
 ## How it works
 Blog posts are stored in the `/_posts` directory as Markdown files. Each post must include the appropriate front matter. 
