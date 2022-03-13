@@ -14,12 +14,15 @@ A custom Next.js blog starter for use with [`create next app`](https://nextjs.or
   * [RSS feed](https://github.com/sandypockets/nextjs-blog-starter#rss-feed)
   * [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
   * [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid)
+* [Customize code syntax highlighting](https://github.com/sandypockets/customize-syntax-highlighting)
+  * [Changing the theme](https://github.com/sandypockets/changing-the-theme)
 * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
   * [Dev dependencies](https://github.com/sandypockets/nextjs-blog-starter#dev-dependencies)
 * [How it works](https://github.com/sandypockets/nextjs-blog-starter#how-it-works)
   * [Front matter](https://github.com/sandypockets/nextjs-blog-starter#front-matter)
   * [Create a new article](https://github.com/sandypockets/nextjs-blog-starter#create-a-new-article)
 * [Contributing](https://github.com/sandypockets/nextjs-blog-starter#contributing)
+* [Screenshots](https://github.com/sandypockets/nextjs-blog-starter#screenshots)
 
 ## Preview
 Preview the example live on [StackBlitz](http://stackblitz.com/):
@@ -155,16 +158,31 @@ You will need a free SendGrid account, which allows you to send up to 100 emails
 2. Open the `.env.local` file that you created when setting up Google Analytics.
 3. Replace `REPLACE-WITH-YOUR-API-KEY` with your actual API key from SendGrid.
 
+## Customize Syntax Highlighting
+When you use inline code or codeblocks on your blog, they'll be highlighted with the Dracula theme style, like this:
+
+![dracula prism syntax highlighting](./docs/dracula-syntax-highlighting.png)
+
+However, you can choose from [over 38 other themes](https://github.com/PrismJS/prism-themes) that are ready to go right out of the box. 
+
+### Changing the theme
+1. Open the `pages/_app.js` file.
+2. On Line 5, note the import of `'prism-themes/themes/prism-dracula.css'`
+3. To change the theme, simply replace the `prism-dracula.css` portion with the name of the new theme file as shown [on this page](https://github.com/PrismJS/prism-themes/tree/master/themes).
+
+For example, if you want to use the `prism-duotone-sea` theme, then adjust the import statement on Line 5 to be `import 'prism-themes/themes/prism-duotone-sea.css'`
+
 ## Dependencies
 * @headlessui/react `^1.4.0`
 * @heroicons/react `^1.0.4`
 * @sendgrid/mail `^7.4.6`
-* classnames `2.2.6`
 * @tailwindcss/forms `^0.4.0`
 * axios `^0.24.0`
+* classnames `2.2.6`
 * date-fns `2.16.1`
 * gray-matter `4.0.2`
 * next `latest`
+* prism-themes `^1.9.0`
 * react `^17.0.2`
 * react-dom `^17.0.2`
 * remark `13.0.0`
@@ -179,9 +197,12 @@ You will need a free SendGrid account, which allows you to send up to 100 emails
 * @storybook/react `^6.3.7`
 * autoprefixer `^10.4.0`
 * babel-loader `^8.2.2`
+* eslint `^8.11.0`
+* eslint-config-next `12.1.0`
 * globby `^13.1.1`
 * postcss `^8.4.5`
 * prettier `^2.5.1`
+* rss `^1.2.2`
 * tailwindcss `3.0.5`
 
 ## How it works
@@ -226,3 +247,18 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Screenshots
+#### Homepage
+![](docs/nextjs-blog-starter-homepage.png)
+
+#### About page
+![](docs/nextjs-blog-starter-about-page.png)
+
+#### Contact page
+![](docs/nextjs-blog-starter-contact-page.png)
+
+#### Syntax highlighting example
+![](docs/nextjs-blog-syntax-highlighting.png)
+
+Want more themes for your syntax highlighting? Check out [Customize code syntax highlighting](https://github.com/sandypockets/customize-syntax-highlighting).
