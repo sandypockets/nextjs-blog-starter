@@ -8,7 +8,10 @@ function classNames(...classes) {
 export default function Toggle({ darkMode, setDarkMode }) {
   const [enabled, setEnabled] = useState(darkMode)
   useEffect(() => {
-    if (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (
+      !('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
       setDarkMode(true)
       setEnabled(true)
     }

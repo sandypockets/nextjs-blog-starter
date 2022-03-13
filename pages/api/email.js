@@ -1,14 +1,13 @@
-import sgMail from "@sendgrid/mail";
+import sgMail from '@sendgrid/mail'
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
-
     const parsedReq = {
       to: process.env.SENDGRID_TO_EMAIL,
       from: process.env.SENDGRID_FROM_EMAIL,
       subject: req.body.msg.subject,
       text: req.body.msg.text,
-      html: req.body.msg.html
+      html: req.body.msg.html,
     }
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
@@ -23,6 +22,8 @@ export default function handler(req, res) {
         res.send(error)
       })
   } else {
-    res.send("Something's not right. Check your API call. Note, this route only accepts post requests!")
+    res.send(
+      "Something's not right. Check your API call. Note, this route only accepts post requests!"
+    )
   }
 }

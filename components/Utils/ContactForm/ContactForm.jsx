@@ -1,5 +1,5 @@
-import { useState } from "react";
-import * as gtag from "../../../lib/gtag";
+import { useState } from 'react'
+import * as gtag from '../../../lib/gtag'
 import axios from 'axios'
 
 export default function ContactForm() {
@@ -10,19 +10,27 @@ export default function ContactForm() {
     message: '',
   })
 
-  const handleName = e => {setFormContents(prev => ({ ...prev, name: e.target.value }))}
-  const handleEmail = e => {setFormContents(prev => ({ ...prev, email: e.target.value }))}
-  const handlePhone = e => {setFormContents(prev => ({ ...prev, phone: e.target.value }))}
-  const handleMessage = e => {setFormContents(prev => ({ ...prev, message: e.target.value }))}
+  const handleName = (e) => {
+    setFormContents((prev) => ({ ...prev, name: e.target.value }))
+  }
+  const handleEmail = (e) => {
+    setFormContents((prev) => ({ ...prev, email: e.target.value }))
+  }
+  const handlePhone = (e) => {
+    setFormContents((prev) => ({ ...prev, phone: e.target.value }))
+  }
+  const handleMessage = (e) => {
+    setFormContents((prev) => ({ ...prev, message: e.target.value }))
+  }
 
-  const handleSubmit = e => {
-    console.log("19 - formContents: ", formContents)
+  const handleSubmit = (e) => {
+    console.log('19 - formContents: ', formContents)
     e.preventDefault()
     gtag.event({
       action: 'submit_form',
       category: 'Contact',
       label: `Contact: ${formContents.email}`,
-      value: formContents.message
+      value: formContents.message,
     })
 
     const msg = {
@@ -30,15 +38,16 @@ export default function ContactForm() {
       text: `${formContents.name}, ${formContents.email} - ${formContents.message}`,
     }
 
-    axios.post('/api/email', {
-      msg,
-    })
+    axios
+      .post('/api/email', {
+        msg,
+      })
       .then(function (response) {
-        console.log(response);
+        console.log(response)
       })
       .catch(function (error) {
-        console.log(error);
-      });
+        console.log(error)
+      })
 
     setFormContents({
       name: '',
@@ -134,7 +143,9 @@ export default function ContactForm() {
                         hover:bg-white hover:text-black hover:border-black hover:border-3
                         dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black
                         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-              onClick={(e) => {handleSubmit(e)}}
+              onClick={(e) => {
+                handleSubmit(e)
+              }}
               onSubmit={(e) => e.preventDefault()}
             >
               Submit

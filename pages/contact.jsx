@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Head from "next/head";
+import Head from 'next/head'
 import * as gtag from '../lib/gtag'
-import { BLOG_NAME } from "../lib/constants";
-import Layout from "../components/Layout/Layout";
-import Container from "../components/Layout/Container";
-import ContactPage from "../components/Utils/ContactForm/ContactPage";
-import PageHeading from "../components/PageHeading";
+import { BLOG_NAME } from '../lib/constants'
+import Layout from '../components/Layout/Layout'
+import Container from '../components/Layout/Container'
+import ContactPage from '../components/Utils/ContactForm/ContactPage'
+import PageHeading from '../components/PageHeading'
 
 export default function Contact() {
   const [message, setMessage] = useState('')
@@ -20,7 +20,7 @@ export default function Contact() {
       action: 'submit_form',
       category: 'Contact',
       label: message,
-      value: message
+      value: message,
     })
     setMessage('')
   }
@@ -31,9 +31,7 @@ export default function Contact() {
         <title>Contact | {BLOG_NAME}</title>
       </Head>
       <Container>
-        <PageHeading>
-          Let's connect.
-        </PageHeading>
+        <PageHeading>Let's connect.</PageHeading>
         <ContactPage />
       </Container>
     </Layout>

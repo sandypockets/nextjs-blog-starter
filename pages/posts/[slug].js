@@ -8,7 +8,7 @@ import Head from 'next/head'
 import Header from '../../components/Post/Header'
 import Layout from '../../components/Layout/Layout'
 import PostBody from '../../components/Post/PostBody'
-import PostHeader from "../../components/Post/PostHeader";
+import PostHeader from '../../components/Post/PostHeader'
 import PostTitle from '../../components/Post/PostTitle'
 
 export default function Post({ post, morePosts, preview }) {

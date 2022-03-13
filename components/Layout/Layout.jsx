@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react";
-import Footer from "./Footer";
+import { useEffect, useState } from 'react'
+import Footer from './Footer'
 import Meta from './Meta'
-import Nav from "./Nav";
+import Nav from './Nav'
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState()
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
       document.documentElement.classList.add('dark')
       setDarkMode(true)
     } else {
