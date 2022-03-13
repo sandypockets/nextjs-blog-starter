@@ -31,7 +31,7 @@ export default function Contact() {
         <title>Contact | {BLOG_NAME}</title>
       </Head>
       <Container>
-        <PageHeading>Let's connect.</PageHeading>
+        <PageHeading>Let&apos;s connect.</PageHeading>
         <ContactPage />
       </Container>
     </Layout>

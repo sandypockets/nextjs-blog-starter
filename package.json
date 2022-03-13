@@ -10,6 +10,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "postbuild": "node ./scripts/generate-sitemap.mjs && node ./scripts/generate-rss.mjs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -43,6 +44,8 @@
     "@storybook/react": "^6.3.7",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.2",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "12.1.0",
     "globby": "^13.1.1",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",

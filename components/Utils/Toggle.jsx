@@ -22,7 +22,7 @@ export default function Toggle({ darkMode, setDarkMode }) {
         setEnabled(true)
       }
     }
-  })
+  }, [setDarkMode])
 
   const toggleTheme = () => {
     enabled ? setEnabled(false) : setEnabled(true)
