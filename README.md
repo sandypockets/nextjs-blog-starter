@@ -14,8 +14,8 @@ A custom Next.js blog starter for use with [`create next app`](https://nextjs.or
   * [RSS feed](https://github.com/sandypockets/nextjs-blog-starter#rss-feed)
   * [Set up Google Analytics](https://github.com/sandypockets/nextjs-blog-starter#set-up-google-analytics)
   * [Set up SendGrid](https://github.com/sandypockets/nextjs-blog-starter#set-up-sendgrid)
-* [Customize code syntax highlighting](https://github.com/sandypockets/customize-syntax-highlighting)
-  * [Changing the theme](https://github.com/sandypockets/changing-the-theme)
+* [Customize code syntax highlighting](https://github.com/sandypockets/nextjs-blog-starter#customize-syntax-highlighting)
+  * [Changing the theme](https://github.com/sandypockets/nextjs-blog-starter#changing-the-theme)
 * [Dependencies](https://github.com/sandypockets/nextjs-blog-starter#dependencies)
   * [Dev dependencies](https://github.com/sandypockets/nextjs-blog-starter#dev-dependencies)
 * [How it works](https://github.com/sandypockets/nextjs-blog-starter#how-it-works)
@@ -261,4 +261,4 @@ Contributions are what make the open source community such an amazing place to b
 #### Syntax highlighting example
 ![](docs/nextjs-blog-syntax-highlighting.png)
 
-Want more themes for your syntax highlighting? Check out [Customize code syntax highlighting](https://github.com/sandypockets/customize-syntax-highlighting).
+Want more themes for your syntax highlighting? Check out [Customize code syntax highlighting](https://github.com/sandypockets/nextjs-blog-starter#customize-syntax-highlighting).
