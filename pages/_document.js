@@ -3,7 +3,6 @@ import { KEYWORDS, DESCRIPTION, AUTHOR, LANG } from '../lib/constants'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
-
   render() {
     // Available themes can be found at https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes
     const theme = 'okaidia'

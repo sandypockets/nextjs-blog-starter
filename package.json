@@ -1,6 +1,6 @@
 {
   "name": "sandypockets-nextjs-blog-starter",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "A create-next-app blog starter",
   "license": "MIT",
   "bugs": {
@@ -10,7 +10,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "prettier ./ --write && next lint",
     "postbuild": "node ./scripts/generate-sitemap.mjs && node ./scripts/generate-rss.mjs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
