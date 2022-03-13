@@ -2,6 +2,7 @@ import '../styles/global.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
+import 'prism-themes/themes/prism-dracula.css'
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()

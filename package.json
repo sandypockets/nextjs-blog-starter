@@ -1,6 +1,6 @@
 {
   "name": "sandypockets-nextjs-blog-starter",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A create-next-app blog starter",
   "license": "MIT",
   "bugs": {
@@ -30,6 +30,7 @@
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "prism-themes": "^1.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remark": "13.0.0",
