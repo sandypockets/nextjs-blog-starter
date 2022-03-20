@@ -1,5 +1,15 @@
 # Next.js Blog Starter
-A custom Next.js blog starter for use with [`create next app`](https://nextjs.org/docs/api-reference/create-next-app). This starter is based on the original blog starter provided by Next, but includes a few extra features and performance improvements that are nice to have right out of the box. 
+A custom Next.js blog starter for use with [`create next app`](https://nextjs.org/docs/api-reference/create-next-app). This starter design is based on the original blog starter provided by Next, but includes many extra features and performance improvements that are nice to have right out of the box.
+
+Run this in your terminal to get started:
+
+```shell
+yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
+```
+
+Was this blog starter what you were looking for?
+
+<a href="https://www.buymeacoffee.com/sandypockets" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # Contents
 * [Preview](https://github.com/sandypockets/nextjs-blog-starter#preview)
@@ -60,6 +70,7 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 * Preformatted code syntax highlighting
 * Priority image downloads for content above the fold, deferred downloads for below it
 * Automatically generated sitemap and robots.txt
+* Automatically generated RSS feed
 * Storybook.js
 
 ## Get started
