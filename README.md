@@ -31,6 +31,8 @@ Was this blog starter what you were looking for?
 * [How it works](https://github.com/sandypockets/nextjs-blog-starter#how-it-works)
   * [Front matter](https://github.com/sandypockets/nextjs-blog-starter#front-matter)
   * [Create a new article](https://github.com/sandypockets/nextjs-blog-starter#create-a-new-article)
+    * [Scaffolding with a script](https://github.com/sandypockets/nextjs-blog-starter#using-the-script)
+    * [Create an article without scaffolding](https://github.com/sandypockets/nextjs-blog-starter#create-a-new-article-manually)
 * [Contributing](https://github.com/sandypockets/nextjs-blog-starter#contributing)
 * [Screenshots](https://github.com/sandypockets/nextjs-blog-starter#screenshots)
 
@@ -243,6 +245,18 @@ ogImage:
 Adjust the value of each key as needed.
 
 ### Create a new article
+There are two ways to create a new article: manually, or using the included script to scaffold one out. 
+
+#### Using the script
+First, you should replace the placeholder `sandypockets` information in the `scripts/generate-post.js` script with your own info. Then, it's as simple as running the script: 
+
+```shell
+yarn new your-post-title
+```
+
+The script will generate a new post in the `/_posts` directory with the title used in the command above, and a default front matter.
+
+#### Create a new article manually
 1. Add a new Markdown file (`.md`) to the `/_posts` directory. 
 2. Add the required front matter (described above) and adjust it as needed. 
 3. Images related to the post should be stored in within the appropriate the `/public/assets/blog` directory. It is recommended you create a new folder for each blog post to prevent the images files from growing unwieldy. 
