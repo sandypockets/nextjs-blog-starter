@@ -17,14 +17,9 @@ const navigation = [
   },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function Nav({ darkMode, setDarkMode }) {
   const router = useRouter()
   const currentPath = router.pathname
-  console.log(currentPath)
 
   return (
     <Disclosure
