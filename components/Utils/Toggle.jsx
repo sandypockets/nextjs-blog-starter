@@ -6,6 +6,7 @@ function classNames(...classes) {
 }
 
 export default function Toggle({ darkMode, setDarkMode }) {
+  darkMode = darkMode ?? false
   const [enabled, setEnabled] = useState(darkMode)
   useEffect(() => {
     if (
