@@ -71,7 +71,7 @@ export default function ContactForm() {
               id="full-name"
               autoComplete="name"
               className="block w-full shadow-xs py-3 rounded-md
-                          px-4placeholder-gray-300
+                          px-4 placeholder-gray-300
                           focus:ring-gray-500 focus:border-gray-500
                           border-gray-300
                           dark:bg-black"

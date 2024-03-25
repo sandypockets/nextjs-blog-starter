@@ -16,6 +16,7 @@ async function generate() {
   })
 
   allBlogs.map((post) => {
+    if (!post) return
     const fileContents = fs.readFileSync(post, 'utf8')
     const { data } = matter(fileContents)
     const slug = post.replace('_posts', '/posts').replace('.md', '')

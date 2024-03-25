@@ -10,6 +10,8 @@ import Layout from '../../components/Layout/Layout'
 import PostBody from '../../components/Post/PostBody'
 import PostHeader from '../../components/Post/PostHeader'
 import PostTitle from '../../components/Post/PostTitle'
+// import 'prism-themes/themes/prism-atom-dark.min.css';
+// import 'prismjs/themes/prism-okaidia.css';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -26,9 +28,7 @@ export default function Post({ post, morePosts, preview }) {
           <>
             <article className="mb-32">
               <Head>
-                <title>
-                  {post.title} | {BLOG_NAME}
-                </title>
+                <title>{`${post.title} | ${BLOG_NAME}`}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader

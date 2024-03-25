@@ -8,11 +8,11 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About | {BLOG_NAME}</title>
+        <title>{`About | ${BLOG_NAME}`}</title>
       </Head>
       <Container>
         <PageHeading>Nice to meet you.</PageHeading>
-        <section className="max-w-3xl mx-auto py-8 md:py-16 lg:py-24">
+        <section className="max-w-3xl py-8 md:pt-8 md:pb-36">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

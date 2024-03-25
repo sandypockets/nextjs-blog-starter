@@ -23,9 +23,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen dark:text-gray-100 dark:bg-black font-inter">
+      <div className="min-h-screen text-black dark:text-gray-100 dark:bg-black font-inter">
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
-        <main className="pt-20">{children}</main>
+        <main className="pt-20 min-h-screen -mb-12">{children}</main>
         <Footer />
       </div>
     </>

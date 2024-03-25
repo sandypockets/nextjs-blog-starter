@@ -60,11 +60,11 @@ async function generate() {
   })
 
   // eslint-disable-next-line no-sync
-  writeFileSync('public/sitemap.xml', formatted)
+  writeFileSync('public/sitemap.xml', formatted.toString())
 
   const robotsTxt = `User-agent: * 
 Sitemap: ${BLOG_URL}/sitemap.xml`
-  writeFileSync('public/robots.txt', robotsTxt)
+  writeFileSync('public/robots.txt', robotsTxt.toString())
 }
 
 generate()

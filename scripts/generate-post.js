@@ -1,15 +1,14 @@
-const fs = require('fs');
+const fs = require('fs')
 
-const args = process.argv.slice(2);
+const args = process.argv.slice(2)
 
 function generatePost(title) {
+  function capitalizeFirstWordLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  }
 
-  function capitalizeFirstWordLetter (str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
-
-  const sentenceCaseTitle = capitalizeFirstWordLetter(title);
-  const formattedTitle = sentenceCaseTitle.split('-').join(' ');
+  const sentenceCaseTitle = capitalizeFirstWordLetter(title)
+  const formattedTitle = sentenceCaseTitle.split('-').join(' ')
 
   const frontMatter = `---
 title: "${formattedTitle}"
@@ -25,10 +24,12 @@ ogImage:
 `
 
   fs.writeFile(`./_posts/${title}.md`, frontMatter, (err) => {
-    if (err) throw err;
-    console.log(`Created ${title}.md!`);
-    console.log("Don't forget to update the excerpt, coverImage path, and ogImage path in the front matter!");
-  });
+    if (err) throw err
+    console.log(`Created ${title}.md!`)
+    console.log(
+      "Don't forget to update the excerpt, coverImage path, and ogImage path in the front matter!"
+    )
+  })
 }
 
-generatePost(args[0]);
+generatePost(args[0])

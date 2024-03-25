@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>Contact | {BLOG_NAME}</title>
+        <title>{`Contact | ${BLOG_NAME}`}</title>
       </Head>
       <Container>
         <PageHeading>Let&apos;s connect.</PageHeading>

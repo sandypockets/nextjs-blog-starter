@@ -4,7 +4,7 @@ A custom Next.js blog starter for use with [`create next app`](https://nextjs.or
 Run this in your terminal to get started:
 
 ```shell
-yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
+npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
 ```
 
 Was this blog starter what you were looking for?
@@ -83,18 +83,18 @@ Built and tested with Node 14
 ### Create Next App
 1. Bootstrap this starter using `create next app`.
 ```shell
-yarn create next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
+npx create-next-app --example https://github.com/sandypockets/nextjs-blog-starter/tree/main nextjs-blog-starter
 ```
 
-2. Change into the new project directory.
+2. Change into the new project directory and install dependencies.
 ```shell
-cd nextjs-blog-starter
+cd nextjs-blog-starter && npm install
 ```
 
 3. Start the development server.
 
 ```shell
-yarn dev
+npm run dev
 ```
 
 5. Once the server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
@@ -130,9 +130,9 @@ The generated sitemap can be found in `public/sitemap.xml`. This command also ge
 
 When you're ready to test it:
 
-1. Run `yarn build`
+1. Run `npm run build`
 2. Check the `public/` directory for the `sitemap.xml` file and `robots.txt` file.
-3. Run `yarn start`
+3. Run `npm run start`
 4. Visit `http://localhost:3000/sitemap.xml`
 
 If you see the xml sitemap, then it was successful.
@@ -145,9 +145,9 @@ An RSS feed is available for the blog at `/feed.xml`. However, you must first co
 
 When you're ready to test it:
 
-1. Run `yarn build`
+1. Run `npm run build`
 2. Check the `public/` directory for the `feed.xml` file.
-3. Run `yarn start`
+3. Run `npm run start`
 4. Visit `http://localhost:3000/feed.xml`
 
 If you see the xml RSS feed, then it was successful.
@@ -186,37 +186,39 @@ However, you can choose from [over 38 other themes](https://github.com/PrismJS/p
 For example, if you want to use the `prism-duotone-sea` theme, then adjust the import statement on Line 5 to be `import 'prism-themes/themes/prism-duotone-sea.css'`
 
 ## Dependencies
-* @headlessui/react `^1.4.0`
-* @heroicons/react `^1.0.4`
-* @sendgrid/mail `^7.4.6`
-* @tailwindcss/forms `^0.4.0`
-* axios `^0.24.0`
-* classnames `2.2.6`
-* date-fns `2.16.1`
-* gray-matter `4.0.2`
-* next `latest`
-* prism-themes `^1.9.0`
-* react `^17.0.2`
-* react-dom `^17.0.2`
-* remark `13.0.0`
-* remark-html `13.0.1`
-* remark-prism `^1.3.6`
+- **@headlessui/react**: ^1.7.18
+- **@heroicons/react**: ^2.1.3
+- **@sendgrid/mail**: ^8.1.1
+- **@tailwindcss/forms**: ^0.5.7
+- **axios**: ^1.6.8
+- **classnames**: 2.2.6
+- **date-fns**: 3.6.0
+- **gray-matter**: 4.0.3
+- **next**: latest
+- **prism-themes**: ^1.9.0
+- **react**: ^18.2.0
+- **react-dom**: 18.2.0
+- **remark**: 15.0.1
+- **remark-gfm**: ^4.0.0
+- **remark-html**: ^16.0.1
+- **remark-prism**: ^1.3.6
+- **sharp**: ^0.33.3
 
 ### Dev Dependencies
-* @babel/core `7.15.0`
-* @storybook/addon-actions `^6.3.7`
-* @storybook/addon-essentials `^6.3.7`
-* @storybook/addon-links `^6.3.7`
-* @storybook/react `^6.3.7`
-* autoprefixer `^10.4.0`
-* babel-loader `^8.2.2`
-* eslint `^8.11.0`
-* eslint-config-next `12.1.0`
-* globby `^13.1.1`
-* postcss `^8.4.5`
-* prettier `^2.5.1`
-* rss `^1.2.2`
-* tailwindcss `3.0.5`
+- **@babel/core**: ^7.15.0
+- **@storybook/addon-actions**: ^6.3.7
+- **@storybook/addon-essentials**: ^8.0.4
+- **@storybook/addon-links**: ^8.0.4
+- **@storybook/react**: ^8.0.4
+- **autoprefixer**: ^10.4.19
+- **babel-loader**: ^8.2.2
+- **eslint**: ^8.57.0
+- **eslint-config-next**: 14.1.4
+- **globby**: ^14.0.1
+- **postcss**: ^8.4.38
+- **prettier**: ^3.2.5
+- **rss**: ^1.2.2
+- **tailwindcss**: ^3.4.1
 
 ## How it works
 Blog posts are stored in the `/_posts` directory as Markdown files. Each post must include the appropriate front matter. 
@@ -251,7 +253,7 @@ There are two ways to create a new article: manually, or using the included scri
 First, you should replace the placeholder `sandypockets` information in the `scripts/generate-post.js` script with your own info. Then, it's as simple as running the script: 
 
 ```shell
-yarn new your-post-title
+npm run new your-post-title
 ```
 
 The script will generate a new post in the `/_posts` directory with the title used in the command above, and a default front matter.

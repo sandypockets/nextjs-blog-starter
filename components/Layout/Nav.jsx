@@ -1,15 +1,12 @@
 import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import Toggle from '../Utils/Toggle'
 import Highlight from '../Utils/Highlight'
 import { useRouter } from 'next/router'
+import MenuIcon from '../Icons/MenuIcon'
+import XMarkIcon from '../Icons/XMarkIcon'
 
 const navigation = [
-  // {
-  //   name: "Home",
-  //   href: "/"
-  // },
   {
     name: 'About',
     href: '/about',
@@ -42,14 +39,14 @@ export default function Nav({ darkMode, setDarkMode }) {
                 <div className="flex-shrink-0 flex items-center pr-4">
                   <Highlight>
                     <Link href={'/'}>
-                      <a>SANDYPOCKETS</a>
+                      <span>SANDYPOCKETS</span>
                     </Link>
                   </Highlight>
                 </div>
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8 my-auto">
                   {navigation.map((item, index) => (
                     <Link key={index} href={item.href}>
-                      <a
+                      <span
                         className={
                           currentPath === item.href
                             ? 'border-transparent text-gray-500 border-gray-700 text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium dark:border-gray-200 dark:text-gray-200'
@@ -57,7 +54,7 @@ export default function Nav({ darkMode, setDarkMode }) {
                         }
                       >
                         {item.name}
-                      </a>
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -70,7 +67,7 @@ export default function Nav({ darkMode, setDarkMode }) {
                 <Disclosure.Button className=" inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
@@ -83,7 +80,7 @@ export default function Nav({ darkMode, setDarkMode }) {
             <div className="pt-2 pb-3 space-y-1">
               {navigation.map((item, index) => (
                 <Link key={index} href={item.href}>
-                  <a
+                  <span
                     className={
                       currentPath === item.href
                         ? 'border-transparent text-gray-500 dark:hover:text-gray-600 hover:bg-gray-50 border-gray-500 text-gray-800 dark:text-gray-100 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
@@ -91,7 +88,7 @@ export default function Nav({ darkMode, setDarkMode }) {
                     }
                   >
                     {item.name}
-                  </a>
+                  </span>
                 </Link>
               ))}
             </div>

@@ -1,4 +1,5 @@
-import { LocationMarkerIcon, MailIcon } from '@heroicons/react/outline'
+import MapPinIcon from '../../Icons/MapPinIcon'
+import MailIcon from '../../Icons/MailIcon'
 
 export default function ContactDetails() {
   return (
@@ -11,11 +12,11 @@ export default function ContactDetails() {
           <div>
             <dt className="sr-only">Postal address</dt>
             <dd className="flex">
-              <LocationMarkerIcon
+              <MapPinIcon
                 className="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-300"
                 aria-hidden="true"
               />
-              <p className="ml-3">Ontario, Canada</p>
+              <p className="ml-3">Region, Country</p>
             </dd>
           </div>
           <div className="mt-3">
@@ -25,7 +26,7 @@ export default function ContactDetails() {
                 className="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-300"
                 aria-hidden="true"
               />
-              <span className="ml-3">hello@sandypockets.dev</span>
+              <span className="ml-3">hello@example.com</span>
             </dd>
           </div>
         </dl>
