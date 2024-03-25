@@ -1,7 +1,21 @@
 import '../styles/global.css'
 
+// v7-style sort
+function storySort(a, b) {
+  return a.title === b.title
+    ? 0
+    : a.id.localeCompare(b.id, undefined, { numeric: true })
+}
+
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: {
+    // Remove argTypesRegex
+    // argTypesRegex: '^on[A-Z].*',
+    // Add explicit actions using the fn function if necessary
+    // fn: 'The function to call',
+    // Add other action configurations as needed
+    // disabled: true, // If you want to disable the actions addon
+  },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -9,16 +23,9 @@ export const parameters = {
     },
   },
   options: {
-    storySort: (a, b) => {
-      // We want the Welcome story at the top
-      if (b[1].kind === 'Welcome') {
-        return 1
-      }
-      // Sort the other stories by ID
-      // https://github.com/storybookjs/storybook/issues/548#issuecomment-530305279
-      return a[1].kind === b[1].kind
+    storySort: (a, b) =>
+      a.title === b.title
         ? 0
-        : a[1].id.localeCompare(b[1].id, { numeric: true })
-    },
+        : a.id.localeCompare(b.id, undefined, { numeric: true }),
   },
 }

@@ -12,8 +12,8 @@
     "start": "next start",
     "lint": "prettier ./ --write && next lint",
     "postbuild": "node ./scripts/generate-sitemap.mjs && node ./scripts/generate-rss.mjs",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "new": "node ./scripts/generate-post.js"
   },
   "repository": {
@@ -42,18 +42,28 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@storybook/addon-actions": "^6.3.7",
+    "@chromatic-com/storybook": "^1.2.25",
+    "@mdx-js/loader": "^3.0.1",
+    "@storybook/addon-actions": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
+    "@storybook/addon-interactions": "^8.0.4",
     "@storybook/addon-links": "^8.0.4",
+    "@storybook/addon-onboarding": "^8.0.4",
+    "@storybook/blocks": "^8.0.4",
+    "@storybook/cli": "^8.0.4",
+    "@storybook/nextjs": "^8.0.4",
     "@storybook/react": "^8.0.4",
+    "@storybook/test": "^8.0.4",
     "autoprefixer": "^10.4.19",
     "babel-loader": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.4",
+    "eslint-plugin-storybook": "^0.8.0",
     "globby": "^14.0.1",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "rss": "^1.2.2",
+    "storybook": "^8.0.4",
     "tailwindcss": "^3.4.1"
   }
 }
