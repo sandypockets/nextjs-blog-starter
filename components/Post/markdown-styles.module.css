@@ -1,6 +1,5 @@
 /* Markdown CSS */
 .markdown code[class*='language-'] {
-  @apply text-black;
   text-shadow: none;
 }
 
