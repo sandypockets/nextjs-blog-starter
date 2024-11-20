@@ -250,7 +250,7 @@ And many more. Check out the [full list of supported langauges](https://prismjs.
 
 ### Collapsible summaries
 
-```markdown
+```html
 <details>
   <summary>Click to open or close</summary>
       ```ejs

@@ -10,8 +10,16 @@ import Layout from '../../components/Layout/Layout'
 import PostBody from '../../components/Post/PostBody'
 import PostHeader from '../../components/Post/PostHeader'
 import PostTitle from '../../components/Post/PostTitle'
-// import 'prism-themes/themes/prism-atom-dark.min.css';
-// import 'prismjs/themes/prism-okaidia.css';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-jsx';
+import 'prismjs/components/prism-ruby';
+import 'prismjs/components/prism-sass';
+import 'prismjs/components/prism-scss';
+import 'prismjs/components/prism-markdown';
+import 'prism-themes/themes/prism-atom-dark.min.css';
+
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
