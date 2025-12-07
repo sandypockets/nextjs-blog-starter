@@ -1,49 +1,17 @@
-const path = require('path')
-
-module.exports = {
+export default {
   stories: [
     '../stories/**/*.mdx',
     '../stories/**/*.md',
     '../stories/**/*.stories.@(js|jsx|ts|tsx)',
   ],
+
   addons: [
     '@storybook/addon-onboarding',
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
     '@chromatic-com/storybook',
-    '@storybook/addon-interactions',
+    '@storybook/addon-docs'
   ],
-  framework: '@storybook/nextjs',
-  docs: {
-    // Your docs configuration
-    autodocs: 'tag',
-  },
+
+  framework: '@storybook/nextjs-vite',
   staticDirs: ['../public'],
-
-  webpackFinal: async (config, { configType }) => {
-    // Locate the rules section of the webpack config
-    const rules = config.module.rules
-
-    // Add MDX loader
-    rules.push({
-      test: /\.mdx$/,
-      use: [
-        {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
-        },
-        {
-          loader: '@mdx-js/loader',
-          options: {
-            remarkPlugins: [require('remark-prism')],
-          },
-        },
-      ],
-    })
-
-    // Return the updated webpack config
-    return config
-  },
 }
